@@ -27,7 +27,36 @@
             <version>4.8.0</version> <!-- Latest stable version -->
         </dependency>
 
-        <!-- JUnit Dependency for Tests -->
+        <!-- TestNG Dependency -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.0</version>  <!-- Or the latest version -->
+            <scope>test</scope>
+        </dependency>
+
+        <!-- WebDriver Manager for managing FirefoxDriver -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.3.0</version> <!-- Automatically manage FirefoxDriver -->
+        </dependency>
+
+        <!-- Tesseract OCR Library -->
+        <dependency>
+            <groupId>net.sourceforge.tess4j</groupId>
+            <artifactId>tess4j</artifactId>
+            <version>4.5.4</version> <!-- Latest version -->
+        </dependency>
+
+        <!-- Log4j for Logging (optional) -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+        <!-- JUnit Dependency for Tests (if needed for backward compatibility) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -39,27 +68,6 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.8.2</version>
             <scope>test</scope>
-        </dependency>
-
-        <!-- WebDriver Manager for managing FirefoxDriver -->
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.3.0</version> <!-- Automatically manage FirefoxDriver -->
-        </dependency>
-
-        <!-- Log4j for Logging (optional) -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.14.1</version>
-        </dependency>
-
-        <!-- Tesseract OCR Library -->
-        <dependency>
-            <groupId>net.sourceforge.tess4j</groupId>
-            <artifactId>tess4j</artifactId>
-            <version>4.5.1</version>
         </dependency>
     </dependencies>
 
